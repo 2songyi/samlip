@@ -1,6 +1,6 @@
 // layout 공통
 // header height
-$headerHeight: 60px;
+$headerHeight: 80px;
 $subMenuHeight: 40px;
 $footerHeight: 80px;
 $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
@@ -12,12 +12,17 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
   #header {
     position: relative;
     height: $headerHeight; //서브메뉴 만들기위해 고정형으로
+    border-bottom: 1px solid #f5f5f5;
     // 로고 영역
     #top-logo {
       float: left;
       a {
         height: $headerHeight;
         line-height: $headerHeight;
+        img {
+          position: absolute;
+          height: 100%;
+        }
       }
     }
     // 메인 메뉴
@@ -89,6 +94,7 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
   #footer {
     margin-top: 50px;
     color: $fontColorPrimary;
+    background: $footerBg;
     .footer-top {
       padding: 60px 0 30px;
     }
@@ -101,6 +107,12 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        .footer-logo {
+          img {
+            height: 70px;
+            width: 70px;
+          }
+        }
         .column {
           flex: 25%;
           padding: 0 10px;

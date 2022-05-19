@@ -5,9 +5,10 @@ html, body {
 body {
   background: $layoutBg;
   color: $fontColorBasic;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
-html, body, ul, li, h1, h2, h3, h4, h5, h6, p, dd, dl, dt {
+html, body, ul, li, h1, h2, h4, h5, h6, dd, dl, dt {
   margin: 0;
   padding: 0;
 }

@@ -4,122 +4,152 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <title>xwood</title>
+  <title>SPC 삼립</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <script type="text/javascript" src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="./js/common.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
+
 <body>
   <div id="wrap">
     <header id="header">
       <!-- 로고 -->
       <h1 id="top-logo">
-        <a href="index.html">XWOOD</a>
+        <a href="./index.html">
+          <img src="./img/logo/spc-samlip-logo-new.png" alt="logo">
+        </a>
       </h1>
       <!-- 메인메뉴 -->
       <nav id="top-nav">
         <ul>
           <li>
-            <a href="./company/introduce.html">Company</a>
+            <a href="./company/introduce.html">COMPANY</a>
             <ul class="sub-menu">
-              <li><a href="./company/introduce.html">Introduce</a></li>
-              <li><a href="./company/ci.html">CI</a></li>
-              <li><a href="./company/history.html">History</a></li>
+              <li><a href="./company/introduce.html">경영이념</a></li>
+              <li><a href="./company/history.html">연혁</a></li>
+              <li><a href="./company/ci.html">CI/BI</a></li>
             </ul>
           </li>
-          <li><a href="./product/product.html">Product</a></li>
-          <li><a href="./gallery/gallery.html">Gallery</a></li>
-          <li><a href="./community/notice.html">Community</a>
+          <li><a href="./brands/brands.html">BRANDS</a></li>
+          <li><a href="./community/news.html">삼립뉴스</a>
             <ul class="sub-menu">
-              <li><a href="./community/notice.html">Notice</a></li>
-              <li><a href="./community/faq.html">FAQ</a></li>
+              <li><a href="./community/news.html">보도자료</a></li>
+              <li><a href="./community/recruit.html">공고</a></li>
+              <li><a href="./community/notice.html">공지사항</a></li>
             </ul>
           </li>
-          <li><a href="./location/location.html">Location</a></li>
+          <li><a href="./location/location.html">오시는 길</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <style>
-       .swiper {
-         width: 100%;
-         height: 100%;
-       }
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
 
-       .swiper-slide {
-         text-align: center;
-         font-size: 18px;
-         height: 550px;
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          height: 550px;
 
-         /* Center slide text vertically */
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: -webkit-flex;
-         display: flex;
-         -webkit-box-pack: center;
-         -ms-flex-pack: center;
-         -webkit-justify-content: center;
-         justify-content: center;
-         -webkit-box-align: center;
-         -ms-flex-align: center;
-         -webkit-align-items: center;
-         align-items: center;
-       }
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
 
-       .swiper-slide img {
-         display: block;
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-       }
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
 
-       .swiper {
-         margin-left: auto;
-         margin-right: auto;
-       }
-     </style>
+        .swiper {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
       <!-- main banner -->
       <!-- swiper plugin 사용 -->
       <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide mainbanner">Slide 1</div>
-        <div class="swiper-slide mainbanner">Slide 2</div>
-        <div class="swiper-slide mainbanner">Slide 3</div>
-        <div class="swiper-slide mainbanner">Slide 2</div>
-        <div class="swiper-slide mainbanner">Slide 3</div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide mainbanner first">
+            <h2>Good Food &<br>Happy Life</h2>
+            <p>좋은 음식과 서비스를 통해 더 가치있고<br>건강한 삶을 만들어나갑니다</p>
+          </div>
+          <div class="swiper-slide mainbanner second">
+            <h2>Good Bread</h2>
+            <p>우리만의 기술과 경험,노하우로<br>제빵 산업의 내일을 엽니다</p>
+          </div>
+          <div class="swiper-slide mainbanner third">
+            <h2>Tasty Food</h2>
+            <p>맛과 건강을 생각한 음식으로<br>맛있는 푸드 스토리를 만듭니다</p>
+          </div>
+          <div class="swiper-slide mainbanner forth">
+            <h2>Sweet Desert</h2>
+            <p>소비자의 취향에 맞는<br>새로운 디저트 문화를 제안합니다</p>
+          </div>
+          <div class="swiper-slide mainbanner fifth">
+            <h2>Fresh Deli</h2>
+            <p>최첨단 시스템과 설비로 소비자의 식탁에<br>가장 신선한 식품을 전달합니다</p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
       <!-- content area-->
       <div class="container">
         <div class="content">
           <div class="inner">
             <div class="box items_2">
               <div class="items">
-                <h3 class="title">funiture</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="./company/introduce.html" class="gbtn">More View</a>
+                <h3 class="title">SPC삼립 '포켓몬빵'신제품 4종 출시</h3>
+                <p>'피카츄 망고 컵케익'등 냉장 디저트 3종, 빵 1종 선보여<br>
+                신규 라인업 추가... 포켓몬빵 공급량 기존 대비 30% 이상 증가<br>
+                출시 43일 만에 천 만 봉지 판매 돌파, 메가 히트 상품 등극</p>
+                <a href="./community/news.html" class="gbtn">Read More</a>
               </div>
               <div class="items">
-                <img src="./img/thumb_nail01.jpg" alt="funiture01">
+                <img src="./img/main/poketmon_news.jpg" alt="poketmonnews">
               </div>
             </div>
           </div>
           <div class="inner">
             <div class="box items_2">
               <div class="items">
-                <img src="./img/thumb_nail02.jpg" alt="funiture01">
+                <img src="./img/main/teatra_news.jpg" alt="teatranews">
               </div>
               <div class="items">
-                <h3 class="title">funiture</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="./company/introduce.html" class="gbtn">More View</a>
+                <h3 class="title">SPC삼립, 프리미엄 블렌디드 티 '티트라' RTD 출시</h3>
+                <p>SPC삼립이 프리미엄 블렌디드 티 브랜드 '티트라'의 RTD(Ready To Drink) 음료 2종을 출시했다고 11일 밝혔다.</p>
+                <a href="./community/news.html" class="gbtn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="inner">
+            <div class="box items_2">
+              <div class="items">
+                <h3 class="title">SPC삼립, 하이면 '냉칼국수' 3종 출시</h3>
+                <p>SPC그룹이 운영하는 SPC삼립이 한국인의 미식면 브랜드 '하이면' 냉칼국수 3종을 출시했다고 15일 밝혔다.</p>
+                <a href="./community/news.html" class="gbtn">Read More</a>
+              </div>
+              <div class="items">
+                <img src="./img/main/noddle_news.jpg" alt="noddlenews">
               </div>
             </div>
           </div>
@@ -133,30 +163,22 @@
           <div class="row">
             <div class="column footer-logo">
               <!-- footer logo -->
-              <h3>Logo</h3>
+              <img src="./img/logo/spc-samlip-logo-new.png" alt="">
             </div>
             <div class="column">
               <h4>site map</h4>
               <ul>
-                <li>
-                  <a href="./company/introduce.html">Company</a>
-                </li>
-                <li><a href="./product/product.html">Product</a>
-                </li>
-                <li><a href="./gallery/gallery.html">Gallery</a>
-                </li>
-                <li><a href="./community/notice.html">Community</a>
-                </li>
-                <li><a href="./location/location.html">Location</a>
-                </li>
+                <li><a href="./company/introduce.html">COMPANY</a></li>
+                <li><a href="./brands/brands.html">BRANDS</a></li>
+                <li><a href="./community/news.html">삼립뉴스</a></li>
+                <li><a href="./location/location.html">오시는 길</a></li>
               </ul>
             </div>
             <div class="column">
               <h4>contact us</h4>
               <p>
-                A108 Adam street<br>
-                New York, NY 535022<br>
-                United States<br>
+                경기도 시흥시 공단1대로 101(정왕동)<br>
+                (주)SPC삼립 대표이사 황종현<br>
                 <strong>Phone : </strong><a href="tel:+82-10-0000-0000">+82-010-0000-0000</a><br>
                 <strong>Email : </strong><a href="mailto:mymail@naver.com">mymail@naver.com</a>
               </p>
@@ -184,19 +206,19 @@
     </footer>
   </div>
   <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   </script>
 </body>
 

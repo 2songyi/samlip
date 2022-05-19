@@ -33,6 +33,9 @@
       font-weight: 500;
       font-size: $fontSizeSmall;
       color: #fff;
+      &:nth-child(1) {
+        width: 60%;
+      }
     }
     td {
       padding: 15px;
@@ -43,6 +46,9 @@
       color: $fontColorBasic;
       border-bottom: 1px solid $borderColor1;
       border-collapse: collapse;
+      &:nth-child(1) {
+        width: 60%;
+      }
     }
     & + .gbtn {
       margin-top: 20px;
