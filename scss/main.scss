@@ -59,3 +59,19 @@
     }
   }
 }
+
+.container.main {
+  .content {
+    .inner {
+      .items_2 {
+        .items {
+          img {
+            width: 560px;
+            height: 280px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

@@ -87,32 +87,37 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide mainbanner first">
-            <h2>Good Food &<br>Happy Life</h2>
-            <p>좋은 음식과 서비스를 통해 더 가치있고<br>건강한 삶을 만들어나갑니다</p>
+            <h2>Good Food &<br>Happy Life
+              <!-- <p>좋은 음식과 서비스를 통해 더 가치있고<br>건강한 삶을 만들어나갑니다</p> -->
+            </h2>
           </div>
           <div class="swiper-slide mainbanner second">
-            <h2>Good Bread</h2>
-            <p>우리만의 기술과 경험,노하우로<br>제빵 산업의 내일을 엽니다</p>
+            <h2 style="color:#642c10;">Good Bread
+              <!-- <p>우리만의 기술과 경험,노하우로<br>제빵 산업의 내일을 엽니다</p> -->
+            </h2>
           </div>
           <div class="swiper-slide mainbanner third">
-            <h2>Tasty Food</h2>
-            <p>맛과 건강을 생각한 음식으로<br>맛있는 푸드 스토리를 만듭니다</p>
+            <h2 style="color:#1d356d;">Tasty Food
+              <!-- <p>맛과 건강을 생각한 음식으로<br>맛있는 푸드 스토리를 만듭니다</p> -->
+            </h2>
           </div>
           <div class="swiper-slide mainbanner forth">
-            <h2>Sweet Desert</h2>
-            <p>소비자의 취향에 맞는<br>새로운 디저트 문화를 제안합니다</p>
+            <h2 style="color:#d43936;">Sweet Desert
+              <!-- <p>소비자의 취향에 맞는<br>새로운 디저트 문화를 제안합니다</p> -->
+            </h2>
           </div>
           <div class="swiper-slide mainbanner fifth">
-            <h2>Fresh Deli</h2>
-            <p>최첨단 시스템과 설비로 소비자의 식탁에<br>가장 신선한 식품을 전달합니다</p>
+            <h2 style="color:#4a6512;">Fresh Deli
+              <!-- <p>최첨단 시스템과 설비로 소비자의 식탁에<br>가장 신선한 식품을 전달합니다</p> -->
+            </h2>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
         <div class="swiper-pagination"></div>
       </div>
       <!-- content area-->
-      <div class="container">
+      <div class="container main">
         <div class="content">
           <div class="inner">
             <div class="box items_2">
@@ -143,12 +148,12 @@
           <div class="inner">
             <div class="box items_2">
               <div class="items">
-                <h3 class="title">SPC삼립, 하이면 '냉칼국수' 3종 출시</h3>
-                <p>SPC그룹이 운영하는 SPC삼립이 한국인의 미식면 브랜드 '하이면' 냉칼국수 3종을 출시했다고 15일 밝혔다.</p>
+                <h3 class="title">SPC GFS, 식자재 유통 플랫폼 '온일장' 론칭</h3>
+                <p>기존 식자재 유통 및 관리 역량에 IT 기술 접목해 사업 확대 및 새로운 시장 창출하는 지역 식자재 마트와 자영업자 연결하는 지역 상생 기반 플랫폼.</p>
                 <a href="./community/news.html" class="gbtn">Read More</a>
               </div>
               <div class="items">
-                <img src="./img/main/noddle_news.jpg" alt="noddlenews">
+                <img src="./img/main/onilljang_news.jpg" alt="onillgangnews">
               </div>
             </div>
           </div>
@@ -178,13 +183,13 @@
               <p>
                 경기도 시흥시 공단1대로 101(정왕동)<br>
                 (주)SPC삼립 대표이사 황종현<br>
-                <strong>Phone : </strong><a href="tel:+82-10-0000-0000">+82-010-0000-0000</a><br>
+                <strong><br>Tel : </strong><a href="tel:+82-080-739-8572">+82-080-739-8572</a><br>
                 <strong>Email : </strong><a href="mailto:mymail@naver.com">mymail@naver.com</a>
               </p>
             </div>
             <div class="column news">
               <h4>news</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p><a href="./community/news.html">'포켓몬빵' 신제품 4종 출시</a><br><a href="./community/news.html">프리미엄 블렌디드 티 '티트라' RTD 출시</a><br><a href="./community/news.html">SPC GFS, 식자재 유통 플랫폼 '온일장' 론칭</a></p>
               <form>
                 <input type="text" name="search"><input type="submit" value="search">
                 <!-- input한줄 띄우고 하면 공백생김 -->
@@ -196,10 +201,10 @@
       <!-- footer하단영역 -->
       <div class="container">
         <div class="copyright">
-          &copy;copyright <strong>MyPage</strong> .All Rights Reserved
+          &copy;copyright <strong>SAMLIP</strong> .All Rights Reserved
         </div>
         <div class="credits">
-          Designed By <a href="mailto:5446911s2@daum.net">MySelf</a>
+          Designed By <a href="mailto:5446911s2@daum.net">2S2</a>
         </div>
       </div>
     </footer>
@@ -209,14 +214,19 @@
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
+      centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
     });
   </script>
 </body>

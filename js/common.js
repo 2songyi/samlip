@@ -34,5 +34,26 @@ $(function(){
     }
   });
 
+  // brand btn
+  $(".brand-btn li").click(function(){
+    let liTxt = $(this).text();
+    if (liTxt == 'BAKERY') {
+      $(".brand").removeClass("on");
+      $("#bakery").addClass("on");
+      $(".brand-btn li").removeClass("on");
+      $(this).addClass("on");
+    } else if (liTxt == 'FOOD'){
+      $(".brand").removeClass("on");
+      $("#food").addClass("on");
+      $(".brand-btn li").removeClass("on");
+      $(this).addClass("on");
+    } else if (liTxt == 'STORE/ONLINE') {
+      $(".brand").removeClass("on");
+      $("#store").addClass("on");
+      $(".brand-btn li").removeClass("on");
+      $(this).addClass("on");
+    }
+  });
+
 
 });

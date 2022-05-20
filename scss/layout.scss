@@ -12,6 +12,8 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
     position: relative;
     height: $headerHeight; //서브메뉴 만들기위해 고정형으로
     border-bottom: 2px solid #f5f5f5;
+    font-weight: 600;
+    z-index: 500;
     // 로고 영역
     #top-logo {
       float: left;
@@ -29,6 +31,7 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
       position: relative; //드랍다운 메뉴를 서브메뉴로 ab잡을거라서
       height: $headerHeight;
       float: right;
+      z-index: 500;
       ul { // #top-nav ul 표기와 동일 ///는 컴파일시 사라지는 주석
         float: left;
         li {
@@ -60,7 +63,7 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
             top: calc(100% - 3px);
             opacity: 0;
             transition: .3s;
-            z-index: 500;
+            z-index: 5000;
             li {
               width: 100%; //위에 folat:left, margin없애기 위해
               margin: 0;
@@ -94,7 +97,7 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
   #footer {
     margin-top: 50px;
     color: $fontColorPrimary;
-    background: $footerBg;
+    // background: $footerBg;
     .footer-top {
       padding: 60px 0 30px;
     }
@@ -145,7 +148,8 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
             &:before {
               width: 100%;
               height: 3px;
-              background: $borderColor1;
+              background: $borderColorPrimary;
+              opacity: 0.3;
             }
             &:after {
               width: 60px;
@@ -174,6 +178,7 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
               padding: 6px 8px;
               width: 65%;
               box-sizing: border-box;
+              background: #f5f5f5;
             }
             input[type=submit] {
               border: 0;

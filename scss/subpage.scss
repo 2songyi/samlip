@@ -4,7 +4,7 @@ body.subpage {
     .container {
       display: flex;
       .content {
-        // width: 100%;
+        width: 100%;
       }
       // 왼쪽메뉴
       #lnb {
@@ -70,9 +70,132 @@ body.subpage {
             flex-wrap: wrap;
             text-align: center;
           }
+          .items {
+            &.intro {
+              text-align: center;
+            }
+            .title {
+              // introduce영역
+              &.intro {
+                color: #36b4e5;
+                font-weight: 500;
+                font-size: 1.5rem;
+                & + p {
+                  font-size: 2rem;
+                  font-weight: 400;
+                }
+                & + ul {
+                  width: 100%;
+                  float: left;
+                  text-align: center;
+                  li {
+                    width: 250px;
+                    height: 250px;
+                    display: inline-block;
+                    margin: 20px -10px 0 -10px;
+                    border-radius: 50%;
+                    border: none;
+                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+                    &:nth-child(1) {
+                      background: #36b4e5;
+                      color: #fff;
+                      img {
+                        filter: invert(100%);
+                      }
+                    }
+                    &:nth-child(2) {
+                      background: #fff;
+                    }
+                    &:nth-child(3) {
+                      background: #f3c300;
+                      color: #fff;
+                      img {
+                        filter: invert(100%);
+                      }
+                    }
+                    img {
+                      width: auto;
+                      height: 50px;
+                      margin: 55px 0 15px 0;
+                    }
+                    h4 {
+                      font-size: 1.5rem;
+
+                    }
+                  }
+                }
+              }
+            }
+            // history영역
+            h3.title.history {
+              font-size: 2.531rem;
+              font-weight: 700;
+              color: grey;
+              &:after {
+                content: '';
+                display: block;
+                width: 40px;
+                height: 1px;
+                background: gray;
+                margin: 15px 0 20px 0;
+              }
+              & + p {
+                font-size: 1.5rem;
+                margin: 10px 0 20px 0;
+                & + small {
+                  font-size: 1rem;
+                  color: gray;
+                  margin-bottom: 30px;
+                }
+
+              }
+            }
+          }
+        }
+        // brand btn 영역
+        &.brand-btn {
+          display: block;
+          text-align: center;
+          ul {
+            li {
+              display: inline-block;
+              margin-left: 50px;
+              font-weight: 600;
+              font-size: 1.5rem;
+              color: #CCC;
+              transition: .3s;
+              &:first-child {
+                margin-left: 0;
+              }
+              &:hover {
+                color: #121212;
+              }
+              &.on {
+                color: #121212;
+                border-bottom: 2px solid #121212;
+              }
+            }
+          }
+          & + section#bakery {
+            display: none;
+            &.on {
+              display: block;
+            }
+            & + section#food {
+              display: none;
+              &.on {
+                display: block;
+              }
+              & + section#store {
+                display: none;
+                &.on {
+                  display: block;
+                }
+              }
+            }
+          }
         }
       }
     }
   }
-
 }
