@@ -8,11 +8,10 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
 #wrap {
   width: $siteWidth;
   margin: 0 auto;
-
   #header {
     position: relative;
     height: $headerHeight; //서브메뉴 만들기위해 고정형으로
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
     // 로고 영역
     #top-logo {
       float: left;
@@ -89,6 +88,7 @@ $mainMinHeight: calc(100vh - (#{$headerHeight} + #{$footerHeight} + 51px));
 
   main {
     min-height: $mainMinHeight;
+    margin-top: 10px;
   }
 
   #footer {

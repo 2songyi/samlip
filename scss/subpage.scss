@@ -3,6 +3,9 @@ body.subpage {
   main {
     .container {
       display: flex;
+      .content {
+        // width: 100%;
+      }
       // 왼쪽메뉴
       #lnb {
         flex: 230px;
@@ -62,7 +65,11 @@ body.subpage {
           border-top: 1px solid $borderColorPrimary;
         }
         .box {
-          flex-wrap: wrap;
+          &.wrap {
+            //연혁부분에서는 이 속성 안씀
+            flex-wrap: wrap;
+            text-align: center;
+          }
         }
       }
     }

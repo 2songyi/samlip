@@ -8,6 +8,7 @@
   <script type="text/javascript" src="../js/jquery.min.js"></script>
   <script type="text/javascript" src="../js/common.js"></script>
 </head>
+
 <body class="subpage">
   <div id="wrap">
     <header id="header">
@@ -50,8 +51,82 @@
         <!-- 컨텐츠 본문 영역 -->
         <div class="content">
           <h2 class="sub-title"><span>오시는 길</span></h2>
-          <div class="inner">
-            <div id="map" style="width: 1000px; height: 350px; margin: 50px auto 0"></div>
+          <div class="inner-rlcontent">
+            <div class="section-left">
+              <h3 class="title">SPC삼립 양재 사옥</h3>
+              <dl>
+                <dt>Address</dt>
+                <dd>서울특별시 서초구 양재동 남부순환로 2620</dd>
+                <dt>전화</dt>
+                <dd><a href="tel:080-739-8572">080-739-8572</a></dd>
+                <dt>대중교통</dt>
+                <dd>지하철 3호선 양재역 5번 출구, 도보 3분 소요</dd>
+              </dl>
+            </div>
+            <div class="section-right">
+              <div id="map" style="height: 350px; background:grey;"></div>
+            </div>
+          </div>
+          <div class="inner-rlcontent">
+            <div class="section-left">
+              <h3 class="title">SPC삼립 사업장</h3>
+            </div>
+            <div class="section-right">
+              <div class="tbl-header">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>공장</th>
+                      <th>주소</th>
+                      <th>지도보기</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div class="tbl-content">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>양재사옥</td>
+                      <td>서울특별시 서초구 남부순환로 2620 (06737)</td>
+                      <td>지도보기</td>
+                    </tr>
+                    <tr>
+                      <td>시화공장</td>
+                      <td>경기도 시흥시 공단1대로 101 (15085)</td>
+                      <td>지도보기</td>
+                    </tr>
+                    <tr>
+                      <td>대구공장</td>
+                      <td>대구광역시 달서구 성서로 255 (42704)</td>
+                      <td>지도보기</td>
+                    </tr>
+                    <tr>
+                      <td>충주공장</td>
+                      <td>충북 청주시 주덕읍 주덕농공길 73 (27462)</td>
+                      <td>지도보기</td>
+                    </tr>
+                    <tr>
+                      <td>청주공장</td>
+                      <td>충북 청주시 흥덕구 산단로 88 (28575)</td>
+                      <td>지도보기</td>
+                    </tr>
+                    <tr>
+                      <td>서천공장</td>
+                      <td>충남 서천군 종천면 종천공단길 14번길 52 (33613)</td>
+                      <td>지도보기</td>
+                    </tr>
+                    <tr>
+                      <td>세종공장</td>
+                      <td>세종특별자치시 금남면 진동길 15 (30086)</td>
+                      <td>지도보기</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" class="gbtn right">write</a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -125,19 +200,18 @@
       position: markerPosition
     });
     var infowindow = new kakao.maps.InfoWindow({
-           content: '<div class="map-info-window">korea it</div>'
-       });
-       infowindow.open(map, marker);
+      content: '<div class="map-info-window">korea it</div>'
+    });
+    infowindow.open(map, marker);
 
-       // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
-       // map.setCenter(coords);
+    // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+    // map.setCenter(coords);
 
     // 마커가 지도 위에 표시되도록 설정합니다
     marker.setMap(map);
 
     // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
     // marker.setMap(null);
-
   </script>
 </body>
 
