@@ -168,11 +168,11 @@ body.subpage {
                 margin-left: 0;
               }
               &:hover {
-                color: #121212;
+                color: $fontColorPrimary;
               }
               &.on {
-                color: #121212;
-                border-bottom: 2px solid #121212;
+                color: $fontColorPrimary;
+                border-bottom: 2px solid $fontColorPrimary;
               }
             }
           }
